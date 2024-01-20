@@ -103,7 +103,7 @@ export default function Home() {
       </div>
 
       <footer className="text-white text-center">
-        created by <a href="https://twitter.com/yuki82511988">ほりゆう</a>
+        created by <a className='text-red-800' href="https://twitter.com/yuki82511988">ほりゆう</a>
       </footer>
     </div>
   );
