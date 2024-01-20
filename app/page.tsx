@@ -58,7 +58,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-black" style={{ height: '100vh' }}>
-      <div className="mt-3 mb-10 " style={{ width: 300, height: 300 }}>
+      <div className="mt-3 mb-10 " style={{ width: 200, height: 200 }}>
         <Image
           src={selectedImage}
           alt="Random Image"
