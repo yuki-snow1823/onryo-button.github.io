@@ -10,7 +10,7 @@ export default function Home() {
   const [showImage, setShowImage] = useState(false);
   const [showText, setShowText] = useState(false);
   const [soundImage, setSoundImage] = useState(`${BASE_PATH}/sound-on.svg`);
-  const [selectedImage, setSelectedImage] = useState(`${BASE_PATH}/onryo.png`);
+  const [selectedImage, setSelectedImage] = useState(``);
   const [displayText, setDisplayText] = useState("");
 
   const handleSoundClick = () => {
