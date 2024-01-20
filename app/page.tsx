@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { basePath } from "../next.config";
+const BASE_PATH = basePath ? basePath : "" 
 
 export default function Home() {
   return (
@@ -17,7 +19,7 @@ export default function Home() {
           >
             By{" "}
             <Image
-              src="/vercel.svg"
+              src={`${BASE_PATH}/vercel.svg`}
               alt="Vercel Logo"
               className="dark:invert"
               width={100}
