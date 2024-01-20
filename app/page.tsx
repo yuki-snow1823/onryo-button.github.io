@@ -20,6 +20,8 @@ export default function Home() {
         { src: `${BASE_PATH}/touryo.png`, text: "棟梁" },
         { src: `${BASE_PATH}/onryo.png`, text: "怨霊" },
         { src: `${BASE_PATH}/inryo.png`, text: "飲料" },
+        { src: `${BASE_PATH}/genryo.png`, text: "原料" },
+        { src: `${BASE_PATH}/diet.png`, text: "減量" },
       ];
       const randomSelection = images[Math.floor(Math.random() * images.length)];
       setSelectedImage(randomSelection.src);
