@@ -48,13 +48,14 @@ export default function Home() {
     const url = window.location.href;
     const hashtags = "怨霊ボタン";
 
-    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}&hashtags=${encodeURIComponent(hashtags)}`;
-    window.open(twitterUrl, "_blank"); 
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+      text
+    )}&url=${encodeURIComponent(url)}&hashtags=${encodeURIComponent(hashtags)}`;
+    window.open(twitterUrl, "_blank");
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-black">
-
+    <div className="flex flex-col items-center justify-center min-h-screen bg-black" style={{ height: '100vh' }}>
       <div className="mt-3 mb-10 " style={{ width: 300, height: 300 }}>
         <Image
           src={selectedImage}
@@ -89,12 +90,19 @@ export default function Home() {
         {showText && (
           <div className="text-center">
             <p className="text-white mb-3">あなたは {displayText} ボタンを押しました。</p>
-            <button onClick={postToTwitter} className="text-center p-4 bg-white text-black rounded shadow-lg">
+            <button
+              onClick={postToTwitter}
+              className="text-center p-4 bg-white text-black rounded shadow-lg"
+            >
               Xにポストしてあげる
             </button>
           </div>
         )}
       </div>
+
+      <footer className="text-white text-center">
+        created by <a href="https://twitter.com/yuki82511988">ほりゆう</a>
+      </footer>
     </div>
   );
 }
