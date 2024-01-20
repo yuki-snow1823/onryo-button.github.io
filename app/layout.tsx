@@ -9,7 +9,6 @@ export const metadata: Metadata = {
   title: "怨霊ボタン",
   description: "そのボタンは押してはならない...",
   metadataBase: new URL('https://yuki-snow1823.github.io/'),
-  
 };
 
 export default function RootLayout({
